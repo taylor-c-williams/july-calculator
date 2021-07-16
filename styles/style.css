@@ -2,65 +2,86 @@
 body {
     font-family: 'Titillium Web', sans-serif;
 }
-
-
 main {
-    display: flex; 
-    flex-direction: row;
+    display: flex;
+    flex-direction:row;
     justify-content: center;
-    align-items: center;
-    margin-top:30px;
+    flex-wrap: wrap;
+    
 }
 
 #calculator {
-
+    margin-left:182px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
-#input1, #input2 {
-width:65px;
-height:50px;
-font-size:2em;
-text-align:center;
-border: 1px dashed;
-padding-left:5px;
-
-}
-#addButton, #subtractButton, #multiplyButton, #divideButton, #pi 
-{
-    height:40px;
-    width:40px;
-    align-content:space-between;
-    border: 1px dashed;
-    background-color: white;
-    font-size:1.5em;
-    margin: 0px 5px 0px 0px;
-}
-
-#square{
-    height:20px;
-    width:20px;
-    font-size:.85em;
-    position: relative;
-    top:-17px;
-    left:10px;
-    border: 1px dashed;
-    background-color: white;;
-}
-
-#cube{
-    height:20px;
-    width:20px;
-    font-size:.85em;
-    position: relative;
-    top: 7px;
-    left:-10px;
-    border: 1px dashed;
-    background-color: white;
-}
-
-#solution {
-    padding:30px;
+#input1 {
+    width:65px;
+    height:50px;
     font-size:2em;
+    text-align:center;
+    border: 1px dashed;
+    padding-left:5px;
+   
+    }
+    
+    #input2 {
+        width:65px;
+        height:50px;
+        font-size:2em;
+        text-align:center;
+        border: 1px dashed;
+        padding-left:5px;
+        position: relative;
+        top:-140px;
+        left:8px;
+
+    }
+    
+    
+    #square{
+        height:20px;
+        width:20px;
+        font-size:.85em;
+        border: 1px dashed;
+        background-color: white;
+        margin-left:5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #cube{
+        height:20px;
+        width:20px;
+        font-size:.85em;
+        border: 1px dashed;
+        background-color: white;
+        margin-left:5px;
+        margin-top:5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #solution {
+        padding:30px;
+        font-size:2em;
+    }
+
+    #addButton, #subtractButton, #multiplyButton, #divideButton, #pi 
+    {
+        height:40px;
+        width:40px;
+        border: 1px dashed;
+        background-color: white;
+        font-size:1.5em;
+    }
+
+
+
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
 
 header {
@@ -77,10 +98,6 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-
-/* .gutter-right {
-    margin-right: 20px;
-} */
 
 footer {
     position: fixed;
