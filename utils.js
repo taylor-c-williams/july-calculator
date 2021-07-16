@@ -1,15 +1,24 @@
-export function add(booger1, booger2) {
-    return Number(booger1) + Number(booger2);
+export function add(input1, input2) {
+    return Number(input1) + Number(input2);
 }
 
-export function subtract(booger1, booger2) {
-    return Number(booger1) - Number(booger2);
+export function subtract(input1, input2) {
+    return Number(input1) - Number(input2);
 }
 
-export function multiply(booger1, booger2) {
-    return Number(booger1) * Number(booger2);
+export function multiply(input1, input2) {
+    return Number(input1) * Number(input2);
 }
 
-export function divide(booger1, booger2) {
-    return Number(booger1) / Number(booger2);
+export function divide(input1, input2) {
+    return Number(input1) / Number(input2);
 }
+
+export function square(input1) {
+    return Number(input1) * Number(input1);
+}
+
+export function cube(input1) {
+    return Number(input1) * Number(input1) * Number(input1);
+}
+
